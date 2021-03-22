@@ -1,0 +1,147 @@
+MariaDB [user]> create table userinfo (
+    -> id INT AUTO_INCREMENT PRIMARY KEY,
+    -> userid CHAR(40) NOT NULL,
+    -> password CHAR(20) NOT NULL,
+    -> name CHAR(20) NOT NULL,
+    -> gender CHAR(1),
+    -> old INT NOT NULL,
+    -> memo CHAR(200)
+    -> );
+
+insert into userinfo 
+	(userid,password,name,gender,old)value
+	('aaa@xxx.com','00001111','青木岳','1',29);
+
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+MariaDB [user]> create table recentmatch (
+    -> home CHAR(20) NOT NULL,
+    -> away CHAR(20) NOT NULL,
+    -> result CHAR(10)
+    -> win CHAR(20) NOT NULL
+    -> );
+
+insert into recentmatch 
+	(home,away,result)value
+	('グラナダ','バルセロナ','0-4');
+
+insert into recentmatch 
+	(home,away,result)value
+	('アトレティコ','バルセロナ','2-3');
+
+insert into recentmatch 
+	(home,away,result)value
+	('ウエスカ','バルセロナ','0-1');
+
+insert into recentmatch 
+	(home,away,result)value
+	('バルセロナ','エイバル','1-1');
+
+insert into recentmatch 
+	(home,away,result)value
+	('バリャドリード','バルセロナ','0-3');
+
+
+------------------------------------------------------------------------------------
+MariaDB [user]> create table schematch (
+    -> home CHAR(20) NOT NULL,
+    -> away CHAR(20) NOT NULL,
+    -> day DATETIME,
+    -> opponent CHAR(20) NOT NULL	
+    -> );
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('エルチェ','バルセロナ','2021-01-13 00:15','エルチェ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','アトレティコ','2021-01-31','アトレィコ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('ベティス','バルセロナ','2021-02-07','ベティス');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','アラベス','2021-02-14','アラベス');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','カディス','2021-02-21','カディス');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','エルチェ','2021-02-25','エルチェ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('セビージャ','バルセロナ','2021-02-28','セビージャ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('オサスナ','バルセロナ','2021-03-07','オサスナ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','ウエスカ','2021-03-14','ウエスカ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('ソシエダ','バルセロナ','2021-03-21','ソシエダ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','バリャドリード','2021-04-04','バリャドリード');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('レアルマドリード','バルセロナ','2021-04-11','レアルマドリード');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','ヘタフェ','2021-04-21','ヘタフェ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('ビジャレアル','バルセロナ','2021-04-25','ビジャレアル');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','グラナダ','2021-04-28','グラナダ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バレンシア','バルセロナ','2021-05-02','バレンシア');
+
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('バルセロナ','アトレティコ','2021-05-09','アトレティコ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('レバンテ','バルセロナ','2021-05-12','レバンテ');
+
+insert into schematch 
+	(home,away,day,opponent)value
+	('エイバル','バルセロナ','2021-05-23','エイバル');
+----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
